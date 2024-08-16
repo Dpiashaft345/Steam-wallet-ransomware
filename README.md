@@ -22,3 +22,19 @@ The clean variant does not overwrite the MBR and does not create a bootloader.
 - It encrypts the data sent to C2
 - Communicate with C2 through a Tor proxy
 - Unlocking is done remotely
+
+## Setup
+
+- Make sure you have installed Visual Studio 2022 with C++ and an Apache server with phpmyadmin
+- Configure a hidden onion service
+- Create a c++ project for the Init program and add script files to it
+- Create a c++ project for the ONloader program and add script files to it
+- Create a c++ project for the String decryptor program and add script files to it
+- Link dependencies
+- Modifi C2 server url with your
+- Build all.
+- Put Init and ONloader in the same folder as tor.exe, start.ps1, images and dlls.(You can find 'tor.exe' in the Tor browser files)
+- Put php files on apache server and modify connection dates
+- Create a database and import tables
+- Test it on VM
+
