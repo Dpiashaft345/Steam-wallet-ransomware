@@ -13,4 +13,4 @@ If both connections are valid, it collects data such as: cpu, ram, system data, 
 After they are sent, the 'ONloader.exe' program starts, which is the screen lock that makes it impossible to escape without payment.
 It constantly checks the connections with the C2 server.To send the payment information must be entered in the data field. After they are sent, they are checked by a human and if they are correct the screen lock closes but if they are wrong he forcibly closes the computer through a BSOD.
 The clean variant does not overwrite the MBR and does not create a bootloader.
-### The harmful variant is not public.
+###### The harmful variant is not public.
