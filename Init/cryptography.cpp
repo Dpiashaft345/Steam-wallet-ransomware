@@ -236,31 +236,7 @@ std::string encrypt_text(const std::string t) {
     std::vector<uint8_t> enc_result; 
     encryptor.encrypt(str_to_bytes(key), str_to_bytes(message), enc_result);
 
-    /*std::ofstream output_file("enc_dates.txt");
-    std::ostream_iterator<std::uint8_t> output_iterator(output_file);
-    std::copy(enc_result.begin(), enc_result.end(), output_iterator);
 
-  
-
-
-    std::ifstream fin("enc_dates.txt");
-
-    
-    std::vector<char> v;
-
- 
-    char c;
-    while (fin >> c) {
-        v.push_back(c);
-    }
-
-  
-    fin.close();
-
-   
-    for (int i = 0; i < v.size(); i++) {
-        std::cout << v[i];
-    }*/
 
     
 
@@ -282,7 +258,7 @@ std::string decrypt_text(const std::string t)
       std::vector<uint8_t> enc_result;
       encryptor.decrypt(str_to_bytes(key), msg, enc_result);
 
-      //std::cout << bytes_to_str(enc_result) << std::endl;
+    
 
       return bytes_to_str(enc_result);
  }
