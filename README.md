@@ -22,5 +22,3 @@ The clean variant does not overwrite the MBR and does not create a bootloader.
 - It encrypts the data sent to C2
 - Communicate with C2 through a Tor proxy
 - Unlocking is done remotely
-
-- 
