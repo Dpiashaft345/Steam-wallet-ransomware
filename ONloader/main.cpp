@@ -362,8 +362,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         if (LOWORD(wParam) == ID_PAY)
         {
 
-            
-            KillTimer(hWnd, ID_TIME);
+           
 
 
 
@@ -371,6 +370,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
             switch (res)
             {
             case IDYES:
+            KillTimer(hWnd, ID_TIME);
                 ShowWindow(hUnlockPanel, SW_SHOW);
                 ShowWindow(hInfoPanel, SW_HIDE);
                 ShowWindow(hPayPanel, SW_HIDE);
