@@ -1,1 +1,1 @@
-Start-Process 'tor.exe' -WindowStyle Hidden
+
